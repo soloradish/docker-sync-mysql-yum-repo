@@ -12,7 +12,7 @@ COPY syncrepo.sh /opt/
 
 RUN chmod 750 /opt/syncrepo.sh
 
-RUN mkdir -p /repos/mysql
+RUN mkdir -p /repos
 VOLUME ["/repos"]
 
 ENTRYPOINT ["/bin/bash", "/opt/syncrepo.sh"]
